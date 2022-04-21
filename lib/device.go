@@ -81,8 +81,8 @@ const (
 	END_BILL                    = 0x38
 	CMD_PROCESSING_TIME         = 100 * time.Millisecond
 	RESPONSE_DELIMITER          = 0x2c
-	EltradeVID                  = "03EB"
-	EltradePID                  = "6119"
+	EltradeVID                  = "067B"
+	EltradePID                  = "2303"
 )
 
 var (
