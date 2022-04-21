@@ -130,7 +130,7 @@ func getPortName() (string, error) {
 	}
 	for _, port := range ports {
 		Logger.Debugf("Found port: Name: %s\n VendorID: %s\n ProductId: %s\n", port.Name, port.VID, port.PID)
-		if port.IsUSB && port.VID == EltradeVID && port.PID == EltradePID {
+		if port.VID == EltradeVID && port.PID == EltradePID {
 			Logger.Infof("Matched port: %s\n", port.Name)
 			return port.Name, nil
 		}
