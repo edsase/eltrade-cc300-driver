@@ -2,7 +2,7 @@ package cmd
 
 import (
 	"fmt"
-	"github.com/geeckmc/eltrade-cc300-driver/lib"
+	"github.com/edsase/eltrade-cc300-driver/lib"
 	"strings"
 	"time"
 )
