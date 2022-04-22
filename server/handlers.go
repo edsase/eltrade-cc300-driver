@@ -3,7 +3,7 @@ package server
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/geeckmc/eltrade-cc300-driver/cmd"
+	"https://github.com/edsase/eltrade-cc300-driver/cmd"
 	"github.com/imdario/mergo"
 	"github.com/xeipuuv/gojsonschema"
 	"io/ioutil"
