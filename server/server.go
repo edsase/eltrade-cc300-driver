@@ -2,7 +2,7 @@ package server
 
 import (
 	"fmt"
-	eltrade "https://github.com/edsase/eltrade-cc300-driver/lib"
+	eltrade "github.com/edsase/eltrade-cc300-driver/lib"
 	"github.com/xeipuuv/gojsonschema"
 	"net/http"
 )
