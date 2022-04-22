@@ -5,7 +5,7 @@ package main
 import (
 	"context"
 	"fmt"
-	"https://github.com/edsase/eltrade-cc300-driver/server"
+	"github.com/edsase/eltrade-cc300-driver/server"
 	"github.com/juju/loggo"
 	"github.com/juju/loggo/loggocolor"
 	"github.com/kardianos/service"
