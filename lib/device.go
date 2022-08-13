@@ -82,7 +82,7 @@ const (
 	CMD_PROCESSING_TIME         = 100 * time.Millisecond
 	RESPONSE_DELIMITER          = 0x2c
 	EltradeVID                  = "067B"
-	EltradePID                  = "2303"
+	EltradePID                  = "8963"
 )
 
 var (
@@ -130,8 +130,7 @@ func getPortName() (string, error) {
 	}
 	for _, port := range ports {
 		Logger.Debugf("Found port: Name: %s\n VendorID: %s\n ProductId: %s\n", port.Name, port.VID, port.PID)
-		Logger.Debugf("Found port: Name: %s\n VendorID: %s-%s\n ProductId: %s-%s\n", port.Name, port.VID, EltradeVID, port.PID, EltradePID)
-		if port.VID == EltradeVID && port.PID == EltradePID {
+		if port.IsUSB && port.VID == EltradeVID && port.PID == EltradePID {
 			Logger.Infof("Matched port: %s\n", port.Name)
 			return port.Name, nil
 		}
