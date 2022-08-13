@@ -129,6 +129,7 @@ func getPortName() (string, error) {
 		return "", fmt.Errorf("No serial ports found!")
 	}
 	for _, port := range ports {
+		Logger.Debugf("Custom port settings: pid: %s, vid: %s\n", port.PID, port.VID)
 		Logger.Debugf("Found port: Name: %s\n VendorID: %s\n ProductId: %s\n", port.Name, port.VID, port.PID)
 		if port.IsUSB && port.VID == EltradeVID && port.PID == EltradePID {
 			Logger.Infof("Matched port: %s\n", port.Name)
