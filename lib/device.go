@@ -82,7 +82,7 @@ const (
 	CMD_PROCESSING_TIME         = 100 * time.Millisecond
 	RESPONSE_DELIMITER          = 0x2c
 	EltradeVID                  = "067B"
-	EltradePID                  = "8963"
+	EltradePID                  = "2303"
 )
 
 var (
